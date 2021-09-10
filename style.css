@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: rgba(209, 209, 209, 0.404);
+  height: 100%;
+}
+p {
+  font-size: 18px;
+}
+.container {
+  width: 100%;
+}
+/*dark*/
+.container-dark {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  background-color: hsl(235, 24%, 19%);
+}
+.light {
+  width: 100%;
+  height: 270px;
+  background: url(./images/bg-desktop-light.jpg) center/cover no-repeat;
+}
+/*dark*/
+.dark {
+  width: 100%;
+  height: 270px;
+  background: url(./images/bg-desktop-dark.jpg) center/cover no-repeat;
+}
+.body {
+  width: 40%;
+  margin: auto;
+  margin-top: -210px;
+  border-radius: 4px;
+  box-shadow: -1px 10px 5px 3px rgba(199, 196, 196, 0.527);
+}
+.heading {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  color: white;
+  letter-spacing: 10px;
+}
+#change {
+  cursor: pointer;
+}
+.inputbod {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+/*dark*/
+.inputbod-dark {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 4px;
+  margin-top: 20px;
+}
+/*dark*/
+.inputbod-dark input {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  margin-left: 10px;
+  outline: none;
+  padding: 2px;
+  color: hsl(234, 39%, 85%);
+  background-color: transparent;
+}
+.inputbod-dark input::placeholder {
+  color: hsla(234, 39%, 85%, 0.39);
+}
+.inputbod input {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  margin-left: 10px;
+  outline: none;
+  padding: 2px;
+  color: hsl(235, 19%, 35%);
+}
+
+.round {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(233, 11%, 84%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.round:hover {
+  border: 2px solid blueviolet;
+}
+.close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+.close img {
+  width: 100%;
+}
+.items {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 4px;
+  background-color: white;
+}
+/*dark/*/
+.items-dark {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 4px;
+  background-color: hsl(235, 21%, 11%);
+}
+
+/* dark*/
+.item {
+  width: 100%;
+  border-bottom: 2px solid hsl(233, 11%, 84%);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.nothing {
+  display: none;
+}
+.text {
+  width: 90%;
+  margin-left: 10px;
+  padding: 4px;
+  color: hsl(235, 24%, 19%);
+  overflow-wrap: break-word;
+}
+.black {
+  width: 100%;
+  margin-left: 10px;
+  padding: 4px;
+  color: hsl(0, 0%, 100%);
+}
+.text-dark {
+  width: 90%;
+  margin-left: 10px;
+  padding: 4px;
+  color: rgb(156, 6, 6);
+  overflow-wrap: break-word;
+}
+.alert {
+  width: 40%;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+.alert-show {
+  display: block;
+}
+.footer {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10px;
+  padding: 10px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.footer p {
+  font-size: 14px;
+  color: hsl(235, 19%, 35%);
+  cursor: pointer;
+}
+.item-count {
+  width: 25%;
+}
+.filters {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.filters p {
+  font-weight: bold;
+}
+.active p:hover {
+  color: hsl(235, 24%, 19%);
+}
+.completed p:hover {
+  color: hsl(235, 24%, 19%);
+}
+.clear-completed {
+  width: 25%;
+}
+.active-text {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  justify-self: center;
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  display: block;
+}
+.remove {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  justify-self: center;
+}
+.text-line {
+  text-decoration: line-through;
+  color: grey;
+}
+.pic {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    width: 60%;
+  }
+}

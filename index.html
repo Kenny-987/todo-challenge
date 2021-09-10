@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="light">
+        <div class="alert">
+          <p>No note written :)</p>
+        </div>
+      </div>
+      <div class="body">
+        <div class="heading">
+          <div class="title">
+            <h1>TODO</h1>
+          </div>
+          <div class="icon">
+            <img id="change" src="./images/icon-moon.svg" alt="" />
+          </div>
+        </div>
+        <!--note text input-->
+        <div class="inputbod">
+          <div class="round"></div>
+          <input
+            id="textvalue"
+            type="text"
+            placeholder="Create a new todo..."
+          />
+        </div>
+
+        <!--todo items-->
+        <div class="items"></div>
+        <!--todo items-->
+        <!--footer-->
+        <div class="footer">
+          <div class="item-count">
+            <p><span id="num">0</span> items on list</p>
+          </div>
+          <div class="filters">
+            <div class="all">
+              <p style="color: hsl(220, 98%, 61%)">All</p>
+            </div>
+            <div class="active">
+              <p>Active</p>
+            </div>
+            <div class="completed">
+              <p>Completed</p>
+            </div>
+          </div>
+          <div class="clear-completed">
+            <p>Clear Completed</p>
+          </div>
+        </div>
+        <!--footer-->
+      </div>
+    </div>
+
+    <!--javascript-->
+    <script src="./app.js"></script>
+  </body>
+</html>
